@@ -1,0 +1,50 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-filesystem@latest",
+        "C:\\Users\\MSUSERSL123\\files_claude"
+      ]
+    },
+
+    "rest-api": {
+      "command": "npx",
+      "args": [
+        "dkmaker-mcp-rest-api"
+      ],
+      "env": {
+        "REST_BASE_URL": "https://rahulshettyacademy.com",
+        "HEADER_Accept": "application/json"
+      }
+    },
+
+    "excel-mcp-server": {
+      "command": "npx",
+      "args": [
+        "@smithery/cli@latest",
+        "run",
+        "@negokaz/excel-mcp-server",
+        "--key",
+        "261b8815-c7fe-47f0-bd9b-537611e79593"
+      ]
+    }
+  },
+
+  "coworkUserFilesPath": "C:\\Users\\MSUSERSL123\\Claude",
+
+  "preferences": {
+    "coworkScheduledTasksEnabled": false,
+    "ccdScheduledTasksEnabled": false,
+    "sidebarMode": "chat",
+    "remoteToolsDeviceName": "desktop-frc4sk8",
+    "coworkWebSearchEnabled": true
+  }
+}
